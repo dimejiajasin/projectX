@@ -1,0 +1,854 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    meta(name='description', content='')
+    meta(name='author', content='')
+    title NGCEF
+    link(href='stylesheets/bootstrap.min.css', rel='stylesheet')
+    link(href='stylesheets/animate.min.css', rel='stylesheet')
+    link(href='stylesheets/font-awesome.min.css', rel='stylesheet')
+    link(href='stylesheets/lightbox.css', rel='stylesheet')
+    link(href='stylesheets/main.css', rel='stylesheet')
+    link#css-preset(href='stylesheets/presets/preset1.css', rel='stylesheet')
+    link(href='stylesheets/responsive.css', rel='stylesheet')
+    //if lt IE 9
+      script(src='javascripts/html5shiv.js')
+      script(src='javascripts/respond.min.js')
+    link(href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700', rel='stylesheet', type='text/css')
+    link(rel='shortcut icon', href='images/favicon.png')
+  // /head
+  body
+    // .preloader
+    .preloader
+      i.fa.fa-circle-o-notch.fa-spin
+    // /.preloader
+    header#home
+      #home-slider.carousel.slide.carousel-fade(data-ride='carousel')
+        .carousel-inner
+          .item.active(style='background-image: url(images/slider/babyCover01.jpg)')
+            .caption
+              h1.animated.fadeInLeftBig
+                span Welcome to
+              p.animated.fadeInRightBig
+                strong NEW GENERATION CHANGE EDUCATION FOUNDATION (NGCEF)
+              a.btn.btn-start.animated.fadeInUpBig(data-scroll='', href='#about-us') Start now
+          .item(style='background-image: url(images/slider/DSC_0653.JPG)')
+            .caption
+              h1.animated.fadeInLeftBig
+                span   Social Agents
+              p.animated.fadeInRightBig Changing man from the inside out!
+              a.btn.btn-start.animated.fadeInUpBig(data-scroll='', href='#about-us') Start now
+          .item(style='background-image: url(images/slider/31.jpg)')
+            .caption
+              h1.animated.fadeInLeftBig
+                | We are
+                span Creative
+              p.animated.fadeInRightBig Restoring Core Values through Formal and Informal Education
+              a.btn.btn-start.animated.fadeInUpBig(data-scroll='', href='#about-us') Start now
+        a.left-control(href='#home-slider', data-slide='prev')
+          i.fa.fa-angle-left
+        a.right-control(href='#home-slider', data-slide='next')
+          i.fa.fa-angle-right
+        a#tohash(href='#about-us')
+          i.fa.fa-angle-down
+      // /#home-slider
+      .main-nav
+        .container
+          .navbar-header
+            button.navbar-toggle(type='button', data-toggle='collapse', data-target='.navbar-collapse')
+              span.sr-only Toggle navigation
+              span.icon-bar
+              span.icon-bar
+              span.icon-bar
+            a.navbar-brand(href='/')
+              h1
+                img.img-responsive(src='images/logo.png', alt='logo')
+          .collapse.navbar-collapse
+            ul.nav.navbar-nav.navbar-right
+              li.scroll.active
+                a(href='#home') Home
+              li.scroll
+                a(href='#about-us') About Us
+              li.scroll
+                a(href='#services') Service
+              li.scroll
+                a(href='#portfolio') Portfolio
+              li.scroll
+                a(href='#team') Team
+              // <li class="scroll"><a href="#blog">Blog</a></li>
+              li.scroll
+                a(href='#contact') Contact
+      // /#main-nav
+    // /#home
+    section#about-us.parallax
+      .container
+        div(style='height: 200px')
+        .row
+          .col-sm-6
+            .about-info.wow.fadeInUp(data-wow-duration='1000ms', data-wow-delay='300ms')
+              h1 The Vision
+              h3(style='line-height: 28px')
+                | New Generation Change Education Foundation's vision is focused towards creating a new National Ethos that will galvanize visionary leadership and patriotic followership across all sectors of Nigerian populace into positive attitudinal reformation in order to foster a United, Secure, Prosperous and Economically viable Nigeria.
+          .col-sm-6
+            .about-info.wow.fadeInUp(data-wow-duration='1000ms', data-wow-delay='300ms')
+              h1 The Mission
+              h3(style='line-height: 28px')
+                | The mission of NGCEF is to establish a National Moral Rebirth and Character Reformation that would change the attitudes of every citizen of Nigeria by aligning their everyday conduct with the Core Values clearly set out in Chapter II, Section 23 of the 1999 Constitution of the Federal Republic of Nigeria, which states,
+                em
+                  | "The National ethics shall be Discipline, Integrity, Dignity of Labour, Social justice, religious tolerance, Self reliance and Patriotism",
+                |  thereby realizing our vision of 'changing man from the inside out!'.
+    // /#about-us
+    section#services
+      .container
+        .heading.wow.fadeInUp(data-wow-duration='1000ms', data-wow-delay='300ms')
+          .row
+            .text-center.col-sm-8.col-sm-offset-2
+              h2 OUR STRATEGY
+              h3(style='line-height: 28px')
+                | NGCEF's strategy is drama based and learner centered nurturing an all round development of our target audience, Nigerians, categorized under Primary/Secondary schools, Tertiary, Youth Corps members and the Workforce.
+        .text-center.our-services
+          .row
+            .col-sm-4.wow.fadeInDown(data-wow-duration='1000ms', data-wow-delay='300ms')
+              .service-icon
+                i.fa.fa-flask
+              .service-info
+                h3 Primary/ Secondary/ Tertiary
+                p
+                  | Drama based scripts using the 7 core values for Social Studies in the Primary Schools and Civics in Secondary Schools, acted out by the pupils themselves. General Studies at the 100 level at the Universities during which Core Values are revisited through Drama.
+            .col-sm-4.wow.fadeInDown(data-wow-duration='1000ms', data-wow-delay='450ms')
+              .service-icon
+                i.fa.fa-umbrella
+              .service-info
+                h3 NYSC
+                p
+                  | A post-tertiary initiative targeted at the Youth Corpers to revisit Nigeria’s Core Values during the Orientation Camps as well as apply relevant ones during Community Service.
+            .col-sm-4.wow.fadeInDown(data-wow-duration='1000ms', data-wow-delay='550ms')
+              .service-icon
+                i.fa.fa-cloud
+              .service-info
+                h3 Workforce
+                p
+                  | A 30 minutes serial T.V docu-drama and radio drama targeted at the parents, to tackle Nigerias Core Values, vis-a-vis their application at work. Screening would be on National Television Network(T.V./Radio) at prime time.
+    // /#services
+    section#portfolio
+      .container
+        .row
+          .heading.text-center.col-sm-8.col-sm-offset-2.wow.fadeInUp(data-wow-duration='1000ms', data-wow-delay='300ms')
+            h2 Our Portfolio
+            p
+              | These pictures are some of the projects which we have had the privilege of developing towards the overarching mission of NGCEF
+      .container-fluid
+        .row
+          .col-sm-3
+            .folio-item.wow.fadeInRightBig(data-wow-duration='1000ms', data-wow-delay='300ms')
+              .folio-image
+                img.img-responsive(src='images/portfolio/Thumb_DSC_0581.JPG', alt='')
+              .overlay
+                .overlay-content
+                  .overlay-text
+                    .folio-info
+                      h3 Ogun Ayika
+                      p Docu-drama
+                    .folio-overview
+                      span.folio-link
+                        a.folio-read-more(href='#', data-single_url='/users')
+                          i.fa.fa-link
+                      span.folio-expand
+                        a(href='images/portfolio/DSC_0581.JPG', data-lightbox='portfolio')
+                          i.fa.fa-search-plus
+          .col-sm-3
+            .folio-item.wow.fadeInLeftBig(data-wow-duration='1000ms', data-wow-delay='400ms')
+              .folio-image
+                img.img-responsive(src='images/portfolio/t_DSC_0707.JPG', alt='')
+              .overlay
+                .overlay-content
+                  .overlay-text
+                    .folio-info
+                      h3 Ogun Ayika
+                      p Docu-drama
+                    .folio-overview
+                      span.folio-link
+                        //a.folio-read-more(href='/users', data-single_url='portfolio-single.html')
+                        a.folio-read-more(href='/users', data-single_url='portfolio-single.html')
+                          i.fa.fa-link
+                      span.folio-expand
+                        a(href='images/portfolio/DSC_0707.JPG', data-lightbox='portfolio')
+                          i.fa.fa-search-plus
+          .col-sm-3
+            .folio-item.wow.fadeInRightBig(data-wow-duration='1000ms', data-wow-delay='500ms')
+              .folio-image
+                img.img-responsive(src='images/portfolio/t_DSC_0128.JPG', alt='')
+              .overlay
+                .overlay-content
+                  .overlay-text
+                    .folio-info
+                      h3 Ogun Ayika
+                      p Docu-drama
+                    .folio-overview
+                      span.folio-link
+                        a.folio-read-more(href='#', data-single_url='portfolio-single.html')
+                          i.fa.fa-link
+                      span.folio-expand
+                        a(href='images/portfolio/DSC_0128.JPG', data-lightbox='portfolio')
+                          i.fa.fa-search-plus
+          .col-sm-3
+            .folio-item.wow.fadeInLeftBig(data-wow-duration='1000ms', data-wow-delay='600ms')
+              .folio-image
+                img.img-responsive(src='images/portfolio/t_DSC_0246.JPG', alt='')
+              .overlay
+                .overlay-content
+                  .overlay-text
+                    .folio-info
+                      h3 Ogun Ayika
+                      p Docu drama
+                    .folio-overview
+                      span.folio-link
+                        a.folio-read-more(href='#', data-single_url='portfolio-single.html')
+                          i.fa.fa-link
+                      span.folio-expand
+                        a(href='images/portfolio/DSC_0246.JPG', data-lightbox='portfolio')
+                          i.fa.fa-search-plus
+          .col-sm-3
+            .folio-item.wow.fadeInRightBig(data-wow-duration='1000ms', data-wow-delay='700ms')
+              .folio-image
+                img.img-responsive(src='images/portfolio/t_25.jpg', alt='')
+              .overlay
+                .overlay-content
+                  .overlay-text
+                    .folio-info
+                      h3 If Only
+                      p Docu-drama
+                    .folio-overview
+                      span.folio-link
+                        a.folio-read-more(href='#', data-single_url='portfolio-single.html')
+                          i.fa.fa-link
+                      span.folio-expand
+                        a(href='images/portfolio/25.jpg', data-lightbox='portfolio')
+                          i.fa.fa-search-plus
+          .col-sm-3
+            .folio-item.wow.fadeInLeftBig(data-wow-duration='1000ms', data-wow-delay='800ms')
+              .folio-image
+                img.img-responsive(src='images/portfolio/t_31.jpg', alt='')
+              .overlay
+                .overlay-content
+                  .overlay-text
+                    .folio-info
+                      h3 If Only
+                      p Docu drama
+                    .folio-overview
+                      span.folio-link
+                        a.folio-read-more(href='#', data-single_url='portfolio-single.html')
+                          i.fa.fa-link
+                      span.folio-expand
+                        a(href='images/portfolio/31.jpg', data-lightbox='portfolio')
+                          i.fa.fa-search-plus
+          .col-sm-3
+            .folio-item.wow.fadeInRightBig(data-wow-duration='1000ms', data-wow-delay='900ms')
+              .folio-image
+                img.img-responsive(src='images/portfolio/t_32.jpg', alt='')
+              .overlay
+                .overlay-content
+                  .overlay-text
+                    .folio-info
+                      h3 If Only
+                      p Docu drama
+                    .folio-overview
+                      span.folio-link
+                        a.folio-read-more(href='#', data-single_url='portfolio-single.html')
+                          i.fa.fa-link
+                      span.folio-expand
+                        a(href='images/portfolio/32.jpg', data-lightbox='portfolio')
+                          i.fa.fa-search-plus
+          .col-sm-3
+            .folio-item.wow.fadeInLeftBig(data-wow-duration='1000ms', data-wow-delay='1000ms')
+              .folio-image
+                img.img-responsive(src='images/portfolio/t_34.jpg', alt='')
+              .overlay
+                .overlay-content
+                  .overlay-text
+                    .folio-info
+                      h3 If Only
+                      p Docu drama
+                    .folio-overview
+                      span.folio-link
+                        a.folio-read-more(href='#', data-single_url='portfolio-single.html')
+                          i.fa.fa-link
+                      span.folio-expand
+                        a(href='images/portfolio/34.jpg', data-lightbox='portfolio')
+                          i.fa.fa-search-plus
+          .col-sm-3
+            .folio-item.wow.fadeInLeftBig(data-wow-duration='1000ms', data-wow-delay='400ms')
+              .folio-image
+                img.img-responsive(src='images/portfolio/t_Still039.jpg', alt='')
+              .overlay
+                .overlay-content
+                  .overlay-text
+                    .folio-info
+                      h3 Pilot Study
+                      p Student participatory research
+                    .folio-overview
+                      span.folio-link
+                        a.folio-read-more(href='#', data-single_url='portfolio-single.html')
+                          i.fa.fa-link
+                      span.folio-expand
+                        a(href='images/portfolio/Still039.jpg', data-lightbox='portfolio')
+                          i.fa.fa-search-plus
+          .col-sm-3
+            .folio-item.wow.fadeInRightBig(data-wow-duration='1000ms', data-wow-delay='500ms')
+              .folio-image
+                img.img-responsive(src='images/portfolio/t_Still049.jpg', alt='')
+              .overlay
+                .overlay-content
+                  .overlay-text
+                    .folio-info
+                      h3 Pilot Study
+                      p Student participatory research
+                    .folio-overview
+                      span.folio-link
+                        a.folio-read-more(href='#', data-single_url='portfolio-single.html')
+                          i.fa.fa-link
+                      span.folio-expand
+                        a(href='images/portfolio/Still049.jpg', data-lightbox='portfolio')
+                          i.fa.fa-search-plus
+          .col-sm-3
+            .folio-item.wow.fadeInLeftBig(data-wow-duration='1000ms', data-wow-delay='600ms')
+              .folio-image
+                img.img-responsive(src='images/portfolio/t_Still051.jpg', alt='')
+              .overlay
+                .overlay-content
+                  .overlay-text
+                    .folio-info
+                      h3 Pilot Study
+                      p Student participatory research
+                    .folio-overview
+                      span.folio-link
+                        a.folio-read-more(href='#', data-single_url='portfolio-single.html')
+                          i.fa.fa-link
+                      span.folio-expand
+                        a(href='images/portfolio/Still051.jpg', data-lightbox='portfolio')
+                          i.fa.fa-search-plus
+          .col-sm-3
+            .folio-item.wow.fadeInRightBig(data-wow-duration='1000ms', data-wow-delay='700ms')
+              .folio-image
+                img.img-responsive(src='images/portfolio/t_Still057.jpg', alt='')
+              .overlay
+                .overlay-content
+                  .overlay-text
+                    .folio-info
+                      h3 Pilot Study
+                      p Student participatory research
+                    .folio-overview
+                      span.folio-link
+                        a.folio-read-more(href='#', data-single_url='portfolio-single.html')
+                          i.fa.fa-link
+                      span.folio-expand
+                        a(href='images/portfolio/Still057.jpg', data-lightbox='portfolio')
+                          i.fa.fa-search-plus
+          .col-sm-3
+            .folio-item.wow.fadeInLeftBig(data-wow-duration='1000ms', data-wow-delay='800ms')
+              .folio-image
+                img.img-responsive(src='images/portfolio/t_DSC_0248.JPG', alt='')
+              .overlay
+                .overlay-content
+                  .overlay-text
+                    .folio-info
+                      h3 Vote Right
+                      p Drama, Lecture
+                    .folio-overview
+                      span.folio-link
+                        a.folio-read-more(href='#', data-single_url='portfolio-single.html')
+                          i.fa.fa-link
+                      span.folio-expand
+                        a(href='images/portfolio/DSC_0248.JPG', data-lightbox='portfolio')
+                          i.fa.fa-search-plus
+          .col-sm-3
+            .folio-item.wow.fadeInRightBig(data-wow-duration='1000ms', data-wow-delay='900ms')
+              .folio-image
+                img.img-responsive(src='images/portfolio/t_DSC_0558.JPG', alt='')
+              .overlay
+                .overlay-content
+                  .overlay-text
+                    .folio-info
+                      h3 Vote Right
+                      p Drama, Lecture
+                    .folio-overview
+                      span.folio-link
+                        a.folio-read-more(href='#', data-single_url='portfolio-single.html')
+                          i.fa.fa-link
+                      span.folio-expand
+                        a(href='images/portfolio/DSC_0558.JPG', data-lightbox='portfolio')
+                          i.fa.fa-search-plus
+          .col-sm-3
+            .folio-item.wow.fadeInLeftBig(data-wow-duration='1000ms', data-wow-delay='1000ms')
+              .folio-image
+                img.img-responsive(src='images/portfolio/t_DSC_0653.JPG', alt='')
+              .overlay
+                .overlay-content
+                  .overlay-text
+                    .folio-info
+                      h3 Vote Right
+                      p Drama, Lecture
+                    .folio-overview
+                      span.folio-link
+                        a.folio-read-more(href='#', data-single_url='portfolio-single.html')
+                          i.fa.fa-link
+                      span.folio-expand
+                        a(href='images/portfolio/DSC_0653.JPG', data-lightbox='portfolio')
+                          i.fa.fa-search-plus
+          .col-sm-3
+            .folio-item.wow.fadeInLeftBig(data-wow-duration='1000ms', data-wow-delay='1000ms')
+              .folio-image
+                img.img-responsive(src='images/portfolio/t_DSC_0588.JPG', alt='')
+              .overlay
+                .overlay-content
+                  .overlay-text
+                    .folio-info
+                      h3 Vote Right
+                      p Drama, Lecture
+                    .folio-overview
+                      span.folio-link
+                        a.folio-read-more(href='#', data-single_url='portfolio-single.html')
+                          i.fa.fa-link
+                      span.folio-expand
+                        a(href='images/portfolio/DSC_0588.JPG', data-lightbox='portfolio')
+                          i.fa.fa-search-plus
+      #portfolio-single-wrap
+        #portfolio-single
+      // /#portfolio-single-wrap
+    // /#portfolio
+    section#twitter.parallax
+      div
+        a.twitter-left-control(href='#twitter-carousel', role='button', data-slide='prev')
+          i.fa.fa-angle-left
+        a.twitter-right-control(href='#twitter-carousel', role='button', data-slide='next')
+          i.fa.fa-angle-right
+        .container
+          .row
+            .col-sm-8.col-sm-offset-2
+              .twitter-icon.text-center
+                i.fa.fa-twitter
+                h4 Testimonials
+              #twitter-carousel.carousel.slide(data-ride='carousel')
+                .carousel-inner
+                  .item.active.wow.fadeIn(data-wow-duration='1000ms', data-wow-delay='300ms')
+                    p
+                      | “What NGCEF has taken the children through is wonderful and educative and it would make changes in the lives of the children and the country. The playlets would go deep in the memory of the children and it would revive the country”.
+                      br
+                      strong Mrs. Sholabomi Abiola Fadola
+                      | – Principal, Immaculate Hearts Comprehensive Senior High School.
+                  .item
+                    p
+                      | “The prime movers of NGCEF in the last six weeks have demonstrated that Morals capable of changing attitudes and characters can indeed groom primary schools pupils to become good leaders of tomorrow. Obviously, the panacea for corrupt behavior is the NGCEF’s initiative”.
+                      br
+                      strong Mr. Makinde
+                      | – Head Teacher, St. Francis Nursery Primary School.
+                  .item
+                    p
+                      | “NGCEF’s initiative really helps. As a teacher, whenever i ask them questions, they participate more easily because of what they have seen in the drama. I recommend this kind of initiative to the Government for better understanding of subject matters in the classrooms”.
+                      br
+                      strong Ms. Asunmo Oluwakemi
+                      | – Civics Teacher, Immaculate Hearts Comprehensive Senior High School.
+                  .item
+                    p
+                      | “ The Drama sketch taught Core Values needed in life as well as preparing us for Civics in WAEC examination”
+                      br
+                      strong Umeh Abraham
+                      | – Student, Immaculate Heart.
+    // /#twitter
+    section#team
+      .container
+        .row
+          .heading.text-center.col-sm-8.col-sm-offset-2.wow.fadeInUp(data-wow-duration='1200ms', data-wow-delay='300ms')
+            h2 The Team
+            p
+              | Our Success team consists of dedicated Nigerians with pedigree upholding and sustaining NGCEF's vision in various capacities.
+        h2
+          strong Board of Trustees
+        .team-members
+          .row
+            // Akintola Williams
+            .col-sm-3
+              .team-member.wow.flipInY(data-wow-duration='1000ms', data-wow-delay='300ms')
+                .member-image
+                  img.img-responsive(src='images/team/Akintola_Williams.JPG', alt='')
+                .member-info
+                  h3
+                    | MR. AKINTOLA WILLIAMS
+                    br
+                    h5 CBE, CFR
+                  h4 Patron
+
+            // Asiodu
+            .col-sm-3
+              .team-member.wow.flipInY(data-wow-duration='1000ms', data-wow-delay='500ms')
+                .member-image
+                  img.img-responsive(src='images/team/Asiodu.JPG', alt='')
+                .member-info
+                  h3
+                    | Chief Philip .C. Asiodu,
+                    br
+                    h5 CFR, CON
+                  h4 Board Chairman
+                  // Francesca
+            .col-sm-3
+              .team-member.wow.flipInY(data-wow-duration='1000ms', data-wow-delay='800ms')
+                .member-image
+                  img.img-responsive(src='images/team/francesca_emanuel.jpg', alt='')
+                .member-info
+                  h3
+                    | Mrs. Francesca .Y. Emanuel
+                    br
+                    h5 CON
+                  h4 Vice-Chairman
+                  // Kunle Olumide
+            .col-sm-3
+              .team-member.wow.flipInY(data-wow-duration='1000ms', data-wow-delay='500ms')
+                .member-image
+                  img.img-responsive(src='images/team/Adekunle_Olumide.JPG', alt='')
+                .member-info
+                  h3
+                    | Mr Adekunle Olumide
+                    br
+                    h5 OON
+                  h4 Member
+
+          .row
+            .col-sm-3
+              .team-member.wow.flipInY(data-wow-duration='1000ms', data-wow-delay='1100ms')
+                .member-image
+                  img.img-responsive(src='images/team/Gbade_Shote.JPG', alt='')
+                .member-info
+                  h3 Prof. Gbade Sote
+                  h4 Member
+                  // Remi Lasaki
+            .col-sm-3
+              .team-member.wow.flipInY(data-wow-duration='1000ms', data-wow-delay='300ms')
+                .member-image
+                  img.img-responsive(src='images/team/Remi_Lasaki.JPG', alt='')
+                .member-info
+                  h3 Remi Lasaki
+                  h4 Member
+                  // Mayowa Afe
+            .col-sm-3
+              .team-member.wow.flipInY(data-wow-duration='1000ms', data-wow-delay='800ms')
+                .member-image
+                  img.img-responsive(src='images/team/mayowa afe.jpg', alt='')
+                .member-info
+                  h3 Mayowa Afe
+                  h4 Member
+                  // Lucky Egede
+            .col-sm-3
+              .team-member.wow.flipInY(data-wow-duration='1000ms', data-wow-delay='500ms')
+                .member-image
+                  img.img-responsive(src='images/team/Barr_Lucky_Egede.JPG', alt='')
+                .member-info
+                  h3 Barr. Lucky Egede
+                  h4 Member
+
+          .row
+            // Modebola Ajasin
+            .col-sm-3
+              .team-member.wow.flipInY(data-wow-duration='1000ms', data-wow-delay='1100ms')
+                .member-image
+                  img.img-responsive(src='images/team/Debola_Ajasin.JPG', alt='')
+                .member-info
+                  h3 Dr. Modebola Ajasin
+                  h4 Member
+                  // Sheri Ajasin
+            .col-sm-3
+              .team-member.wow.flipInY(data-wow-duration='1000ms', data-wow-delay='800ms')
+                .member-image
+                  img.img-responsive(src='images/team/Sheri_Ajasin.JPG', alt='')
+                .member-info
+                  h3 Dr. Sheri Ajasin
+                  h4 CEO/Executive Director
+                  // Seyi Fasuyi
+            .col-sm-3
+              .team-member.wow.flipInY(data-wow-duration='1000ms', data-wow-delay='1100ms')
+                .member-image
+                  img.img-responsive(src='images/team/blank.png', alt='')
+                .member-info
+                  h3
+                  h4
+            // Lucky Egede
+            .col-sm-3
+              .team-member.wow.flipInY(data-wow-duration='1000ms', data-wow-delay='500ms')
+                .member-image
+                  img.img-responsive(src='images/team/blank.png', alt='')
+                .member-info
+                  h3
+                  h4
+          h2
+            strong Management Team
+          .row
+            // Sheri Ajasin
+            .col-sm-3
+              .team-member.wow.flipInY(data-wow-duration='1000ms', data-wow-delay='800ms')
+                .member-image
+                  img.img-responsive(src='images/team/Sheri_Ajasin.JPG', alt='')
+                .member-info
+                  h3 Dr. Sheri Ajasin
+                  h4 C.E.O/ Founder
+      p(style='text-align: left')
+              | Dr. Sheri Ajasin acquired her first degree at Irene Marsh College of Physical Education, Liverpool,
+            details(style='text-align: left')
+              summary more...
+              p
+              | specialising in Movement Education, which encouraged creativity and a PhD from the University of Lagos, where she taught Physical and Movement Education at the University of Lagos in a career spanning more than 30 years.
+              p
+              | In her retirement she has dedicated her time to pursuits towards Nation building, through dedicated and relentless programs designed to educate the Nigerian through the arts. Her programs aim to highlight the need for a re-orientation of the mind of the average Nigerian man with the objective of self directed, self-motivated and purposeful habits towards a better nation.
+
+            .social-icons
+              ul
+                li
+                  a.facebook(href='#')
+                    i.fa.fa-facebook
+                li
+                  a.twitter(href='#')
+                    i.fa.fa-twitter
+                li
+                  a.linkedin(href='#')
+                    i.fa.fa-linkedin
+                li
+                  a.dribbble(href='#')
+                    i.fa.fa-dribbble
+                li
+                  a.rss(href='#')
+                    i.fa.fa-rss
+
+            // Seyi Fasuyi
+            .col-sm-3
+              .team-member.wow.flipInY(data-wow-duration='1000ms', data-wow-delay='1100ms')
+                .member-image
+                  img.img-responsive(src='images/team/Seyi.jpg', alt='')
+                .member-info
+                  h3 Seyi Fasuyi
+                  h4 Programmes Manager
+                  p(style='text-align: left')
+                    | Trained under the tutelage of Late Prof. Mrs . Zulu Sofola at the Performing Arts Department, University of Ilorin, 1993.
+                  details(style='text-align: left')
+                    summary more...
+                    p
+                    | An experienced Director and theatre administrator, with a bias for ' theatre for development' (tfd) initiatives across, Theater, Television and Radio platforms, spanning over 2 decades. Doubles as the Resident Director of NGCEF
+                .social-icons
+                  ul
+                    li
+                      a.facebook(href='#')
+                        i.fa.fa-facebook
+                    li
+                      a.twitter(href='#')
+                        i.fa.fa-twitter
+                    li
+                      a.linkedin(href='#')
+                        i.fa.fa-linkedin
+                    li
+                      a.dribbble(href='#')
+                        i.fa.fa-dribbble
+                    li
+                      a.rss(href='#')
+                        i.fa.fa-rss
+            // David Olatundun
+            .col-sm-3
+              .team-member.wow.flipInY(data-wow-duration='1000ms', data-wow-delay='500ms')
+                .member-image
+                  img.img-responsive(src='images/team/David.png', alt='')
+                .member-info
+                  h3 David Olatundun
+                  h4 Marketer
+                  p(style='text-align: left')
+                    | A member of the Nigerian Bar Association, Chartered Institute of Taxation of Nigeria , Chartered Institute
+                    details(style='text-align: left')
+                      summary more...
+                      p
+                      | of Stock brokers, Barr. Egede is skilled at corporate legal practise, Taxation practise, marketing, building and real estate development and services.
+                //.social-icons
+                  ul
+                    li
+                      a.facebook(href='#')
+                        i.fa.fa-facebook
+                    li
+                      a.twitter(href='#')
+                        i.fa.fa-twitter
+                    li
+                      a.linkedin(href='#')
+                        i.fa.fa-linkedin
+                    li
+                      a.dribbble(href='#')
+                        i.fa.fa-dribbble
+                    li
+                      a.rss(href='#')
+                        i.fa.fa-rss
+            // Dimeji Ajasin
+            .col-sm-3
+              .team-member.wow.flipInY(data-wow-duration='1000ms', data-wow-delay='1100ms')
+                .member-image
+                  img.img-responsive(src='images/team/volunteer.png', alt='')
+                .member-info
+                  h3 Olabisi Adelaja
+                  h4 Volunteer(PR & Marketing)
+                  p(style='text-align: left')
+                    | Volunteers assist in supporting our programmes. Mature, enthusiastic, caring, and reliable
+
+                  details(style='text-align: left')
+                    summary
+                    p(style='text-align: left')
+                    | volunteers are needed to provide fun, purposeful activities for the children. Volunteers help maintain the momentum and passion of the participants.
+
+                .social-icons
+                  ul
+                    li
+                      a.facebook(href='#')
+                        i.fa.fa-facebook
+                    li
+                      a.twitter(href='#')
+                        i.fa.fa-twitter
+                    li
+                      a.linkedin(href='#')
+                        i.fa.fa-linkedin
+                    li
+                      a.dribbble(href='#')
+                        i.fa.fa-dribbble
+                    li
+                      a.rss(href='#')
+                        i.fa.fa-rss
+    // /#team
+    section#features.parallax
+      .container
+        .row.count
+          .col-sm-3.col-xs-6.wow.fadeInLeft(data-wow-duration='1000ms', data-wow-delay='300ms')
+            i.fa.fa-user
+            h3.timer 4000
+            p Students impacted
+          .col-sm-3.col-xs-6.wow.fadeInLeft(data-wow-duration='1000ms', data-wow-delay='500ms')
+            i.fa.fa-desktop
+            h3.timer 200
+            p Schools in Lagos
+          .col-sm-3.col-xs-6.wow.fadeInLeft(data-wow-duration='1000ms', data-wow-delay='700ms')
+            i.fa.fa-trophy
+            h3.timer 10
+            p WINNING AWARDS
+          .col-sm-3.col-xs-6.wow.fadeInLeft(data-wow-duration='1000ms', data-wow-delay='900ms')
+            i.fa.fa-comment-o
+            h3 Social Construct
+            p Easy adoption
+    // /#features
+    section#contact
+      #google-map.wow.fadeIn(data-latitude='6.620559', data-longitude='3.379343', data-wow-duration='1000ms', data-wow-delay='400ms')
+      #contact-us.parallax
+        .container
+          .row
+            .heading.text-center.col-sm-8.col-sm-offset-2.wow.fadeInUp(data-wow-duration='1000ms', data-wow-delay='300ms')
+              h2 Contact Us
+              p
+                | Do you want to know more information about us, donating, volunteering or just wanting to meet us, please send us a note and we will be in touch!
+          .contact-form.wow.fadeIn(data-wow-duration='1000ms', data-wow-delay='600ms')
+            .row
+              .col-sm-6
+                form#main-contact-form(name='contact-form', method='post', action='#')
+                  .row.wow.fadeInUp(data-wow-duration='1000ms', data-wow-delay='300ms')
+                    .col-sm-6
+                      .form-group
+                        input.form-control(type='text', name='name', placeholder='Name', required='required')
+                    .col-sm-6
+                      .form-group
+                        input.form-control(type='email', name='email', placeholder='Email Address', required='required')
+                  .form-group
+                    input.form-control(type='text', name='subject', placeholder='Subject', required='required')
+                  .form-group
+                    textarea#message.form-control(name='message', rows='4', placeholder='Enter your message', required='required')
+                  .form-group
+                    button.btn-submit(type='submit') Send Now
+              .col-sm-6
+                .contact-info.wow.fadeInUp(data-wow-duration='1000ms', data-wow-delay='300ms')
+                  p We are looking forward to hearing from you.
+                  ul.address
+                    li
+                      i.fa.fa-map-marker
+                      span  Address:
+                      | 32 KAYODE TAIWO STREET, MAGODO GRA PHASE 2, LAGOS.
+                    li
+                      i.fa.fa-phone
+                      span  Phone:
+                      |  +234 802 320 3792 (Corporate)
+                    li
+                      i.fa.fa-phone
+                      span  Phone:
+                      |  +234 802 302 2350 (Seyi)
+                    li
+                      i.fa.fa-envelope
+                      span  Email:
+                      a(href='mailto:someone@yoursite.com')  ngcefmail@gmail.com & info@ngcef.com
+                    li
+                      i.fa.fa-globe
+                      span  Website:
+                      a(href='#') www.ngcef.org
+                    h1(style='background-color: red; color:white; font-size: 40px;'  )
+                      | For Donations
+                    h3(style='font-size:20px;')
+                      br
+                      | NGCEF BANK DETAILS
+                      br
+                      p
+                      | NAME : New Generation Change Education Foundation
+                      br
+                      | BANK : GUARANTY TRUST BANK
+                      br
+                      | ACCOUNT NO : 0131307316
+                      br
+                      | SORT CODE : 058152230
+
+
+    // /#contact
+    footer#footer
+      .footer-top.wow.fadeInUp(data-wow-duration='1000ms', data-wow-delay='300ms')
+        .container.text-center
+          .footer-logo
+            a(href='index.html')
+              img.img-responsive(src='images/logo.png', alt='')
+          .social-icons
+            ul
+              li
+                a.envelope(href='#')
+                  i.fa.fa-envelope
+              li
+                a.twitter(href='#')
+                  i.fa.fa-twitter
+              li
+                a.instagram(href='#')
+                  i.fa.fa-instagram
+              li
+                a.Skype(href='#')
+                  i.fa.fa-skype
+              li
+                a.facebook(href='#')
+                  i.fa.fa-facebook
+              li
+                a.linkedin(href='#')
+                  i.fa.fa-linkedin
+              li
+                a.youtube(href='#')
+                  i.fa.fa-youtube
+      .footer-bottom
+        .container
+          .row
+            .col-sm-6
+              p © 2016 New Generation Change Education Foundation.
+            .col-sm-6
+              p.pull-right
+                | Designed by
+                a(href='#')  DAA
+    script(type='text/javascript', src='javascripts/jquery.js')
+    script(type='text/javascript', src='javascripts/bootstrap.min.js')
+    script(type='text/javascript', src='http://maps.google.com/maps/api/js?sensor=true')
+    script(type='text/javascript', src='javascripts/jquery.inview.min.js')
+    script(type='text/javascript', src='javascripts/wow.min.js')
+    script(type='text/javascript', src='javascripts/mousescroll.js')
+    script(type='text/javascript', src='javascripts/smoothscroll.js')
+    script(type='text/javascript', src='javascripts/jquery.countTo.js')
+    script(type='text/javascript', src='javascripts/lightbox.min.js')
+    script(type='text/javascript', src='javascripts/main.js')
+
+
+
